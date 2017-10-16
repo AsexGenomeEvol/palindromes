@@ -12,7 +12,12 @@ Data from the springtail people
 	http://animalecology.labs.vu.nl/collembolomics/folsomia/data.php
 
 
-16/10/17:
+	16/10/17: 
+
+	Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
+	to reproduce the results of the springtail paper using their data
+	
+
 	ran into an error when installing MCScanX:
 "make
 g++ struct.cc mcscan.cc read_data.cc out_utils.cc dagchainer.cc msa.cc permutation.cc -o MCScanX
@@ -54,7 +59,7 @@ openjdk-8-jre-headless:amd64			install
 	purge those packages: sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless
 	install new packages: sudo apt-get install openjdk-9-jre openjdk-9-jdk
 
-	successful installation (yee but linux is tryhard if you're a newbie)
+	successful installation (yee but linux is tryhard if you're a newbie - took me way too much time)
 	now beginning to try using MCScanX
 	from manual: MCScanX needs 2 input for the standard and easy use
 	1) direct Blastp result (available from the data site, using swissprot as db): .blast file
@@ -66,11 +71,11 @@ Warning: [blastp] The parameter -num_descriptions is ignored for output formats 
 BLAST Database error: No alias or index file found for protein database [nr] in search path [/home/jklopfen/palindromes/MCS-test::]
 Program failed, try executing the command manually.
 
-	then with the two files avaiable from the site:
+	then with the two files avaiable from the site (renamed original .blastout file to .blast for program requirements):
 jklopfen@acer:~/palindromes/MCS-test$ ls fcand*
 fcand.blast  fcand.gff
 
-	(in another folder where the programm is installed - don't know if it should be installed in the git repository, but it is possible)
+	(in another folder where the programm is installed, for it weighs 241.5 MB and cannot be in git repo)
 jklopfen@acer:~/fp/MCScanX$ ./MCScanX MCS-test/fcand
 Reading BLAST file and pre-processing
 Generating BLAST list
@@ -96,7 +101,8 @@ jklopfen@acer:~/fp/MCScanX/MCS-test$ cat fcand.collinearity
 ##########################################
 
 	Results of "hail mary" try: 
-	html file is empty, the command obviously failed, need to better understand what I was actually doing and ask for help maybe
-	Possible reasons: blastp file was not the one expected for the program, gene annotation file may contain duplicate 
+	html file is empty, collinearity results file is also empty
+	the command obviously failed, need to better understand what I was actually doing and ask for help maybe
+	Possible reasons: blastp file was not the one expected for the program, gene annotation file may contain duplicate
 
 
