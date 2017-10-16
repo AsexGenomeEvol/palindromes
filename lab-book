@@ -56,6 +56,47 @@ openjdk-8-jre-headless:amd64			install
 
 	successful installation (yee but linux is tryhard if you're a newbie)
 	now beginning to try using MCScanX
+	from manual: MCScanX needs 2 input for the standard and easy use
+	1) direct Blastp result (available from the data site, using swissprot as db): .blast file
+	2) gene annotations (also available) : .gff file
+	
+	try of generating the .blast file (following manual):
+jklopfen@acer:~/palindromes/MCS-test$ blastall -i fcan_proteins.fa -d nr -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o fcan.blast
+Warning: [blastp] The parameter -num_descriptions is ignored for output formats > 4 . Use -max_target_seqs to control output
+BLAST Database error: No alias or index file found for protein database [nr] in search path [/home/jklopfen/palindromes/MCS-test::]
+Program failed, try executing the command manually.
 
+	then with the two files avaiable from the site:
+jklopfen@acer:~/palindromes/MCS-test$ ls fcand*
+fcand.blast  fcand.gff
+
+	(in another folder where the programm is installed - don't know if it should be installed in the git repository, but it is possible)
+jklopfen@acer:~/fp/MCScanX$ ./MCScanX MCS-test/fcand
+Reading BLAST file and pre-processing
+Generating BLAST list
+0 matches imported (243460 discarded)
+0 pairwise comparisons
+0 alignments generated
+Pairwise collinear blocks written to MCS-test/fcand.collinearity [1.195 seconds elapsed]
+Writing multiple syntenic blocks to HTML files
+Fcan01_Sc162.html
+Done! [0.000 seconds elapsed]
+
+jklopfen@acer:~/fp/MCScanX/MCS-test$ cat fcand.collinearity 
+############### Parameters ###############
+# MATCH_SCORE: 50
+# MATCH_SIZE: 5
+# GAP_PENALTY: -1
+# OVERLAP_WINDOW: 5
+# E_VALUE: 1e-05
+# MAX GAPS: 25
+############### Statistics ###############
+# Number of collinear genes: 0, Percentage: 0.00
+# Number of all genes: 1
+##########################################
+
+	Results of "hail mary" try: 
+	html file is empty, the command obviously failed, need to better understand what I was actually doing and ask for help maybe
+	Possible reasons: blastp file was not the one expected for the program, gene annotation file may contain duplicate 
 
 
