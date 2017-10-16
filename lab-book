@@ -1,0 +1,61 @@
+
+MCScanX: tool used by the springtail people to identify collinear genes block, and thus palindromes
+	How to determine if collinear genes block are palindromic or not ? Tandem reapeats ?
+	
+	Reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3326336/
+
+MCScanX about and download page
+	http://chibba.pgml.uga.edu/mcscan2/
+	Can be installed on linux OS, should we install it on vital-it and try it ? 
+	
+Data from the springtail people
+	http://animalecology.labs.vu.nl/collembolomics/folsomia/data.php
+
+
+16/10/17:
+	ran into an error when installing MCScanX:
+"make
+g++ struct.cc mcscan.cc read_data.cc out_utils.cc dagchainer.cc msa.cc permutation.cc -o MCScanX
+msa.cc: In function ‘void msa_main(const char*)’:
+msa.cc:289:22: error: ‘chdir’ was not declared in this scope
+     if (chdir(html_fn)<0)
+                      ^
+makefile:2: recipe for target 'mcscanx' failed
+make: *** [mcscanx] Error 1
+"
+
+	found a fix on package's github:
+"if you are building on 64-bit you may need to add
+	#include <unistd.h>
+to msa.h, dissect_multiple_alignment.h, and detect_collinear_tandem_arrays.h"
+
+	ran into a new error when installing MCScanX:
+
+"jklopfen@acer:~/fp/MCScanX$ make
+g++ struct.cc mcscan.cc read_data.cc out_utils.cc dagchainer.cc msa.cc permutation.cc -o MCScanX
+g++ struct.cc mcscan_h.cc read_homology.cc out_homology.cc dagchainer.cc msa.cc permutation.cc -o MCScanX_h
+g++ struct.cc dup_classifier.cc read_data.cc out_utils.cc dagchainer.cc cls.cc permutation.cc -o duplicate_gene_classifier
+g++ dissect_multiple_alignment.cc -o downstream_analyses/dissect_multiple_alignment
+g++ detect_collinear_tandem_arrays.cc -o downstream_analyses/detect_collinear_tandem_arrays
+cd downstream_analyses/ && make
+make[1]: Entering directory '/home/jklopfen/fp/MCScanX/downstream_analyses'
+javac -g dot_plotter.java
+make[1]: javac: Command not found
+makefile:5: recipe for target 'dot_plotter.class' failed
+make[1]: *** [dot_plotter.class] Error 127
+make[1]: Leaving directory '/home/jklopfen/fp/MCScanX/downstream_analyses'
+makefile:2: recipe for target 'mcscanx' failed
+make: *** [mcscanx] Error 2"
+
+	fix: openjdk is not installed...
+	get installed package: dpkg --get-selections | less | grep 'jdk'
+openjdk-8-jre:amd64				install
+openjdk-8-jre-headless:amd64			install
+	purge those packages: sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless
+	install new packages: sudo apt-get install openjdk-9-jre openjdk-9-jdk
+
+	successful installation (yee but linux is tryhard if you're a newbie)
+	now beginning to try using MCScanX
+
+
+
