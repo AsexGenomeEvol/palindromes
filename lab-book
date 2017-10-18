@@ -106,3 +106,10 @@ jklopfen@acer:~/fp/MCScanX/MCS-test$ cat fcand.collinearity
 	Possible reasons: blastp file was not the one expected for the program, gene annotation file may contain duplicate
 
 
+	18.10.17:
+	Will try generating the blastp results out of the example command from the manual
+	problem was that there was no database for the genome, will use the command 'makeblastdb'
+	then use the 'typical command'
+
+
+
