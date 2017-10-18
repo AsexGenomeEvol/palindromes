@@ -111,5 +111,8 @@ jklopfen@acer:~/fp/MCScanX/MCS-test$ cat fcand.collinearity
 	problem was that there was no database for the genome, will use the command 'makeblastdb'
 	then use the 'typical command'
 
+makeblastdb -in fcand_genome.fa -dbtype prot
+
+blastall -i fcand_genome.fa -d fcandgenome.fa -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o fcan.blast
 
 
