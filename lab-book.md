@@ -14,14 +14,12 @@ Data from the springtail people
 
 # MCSanX
 
-        16/10/17:
-
-Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
+16/10/17 : Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
 to reproduce the results of the springtail paper using their data
 
 ## Installation	
 
-	ran into an error when installing MCScanX:
+ran into an error when installing MCScanX :
 
 
 ```
@@ -35,7 +33,9 @@ makefile:2: recipe for target 'mcscanx' failed
 make: *** [mcscanx] Error 1
 ```
 
-	found a fix on package's github:
+found a fix on package's github:
+(Kamil) Small note, here you can link the github page that describes the error, that's quite usefull. You can use markdown syntax [text](link)
+
 
 ```
 "if you are building on 64-bit you may need to add
@@ -43,7 +43,7 @@ make: *** [mcscanx] Error 1
 to msa.h, dissect_multiple_alignment.h, and detect_collinear_tandem_arrays.h"
 ```
 
-	ran into a new error when installing MCScanX:
+ran into a new error when installing MCScanX :
 
 ```
 jklopfen@acer:~/fp/MCScanX$ make
@@ -63,23 +63,25 @@ makefile:2: recipe for target 'mcscanx' failed
 make: *** [mcscanx] Error 2"
 ```
 
-	fix: openjdk is not installed...
-	get installed package: `dpkg --get-selections | less | grep 'jdk'`
+fix: openjdk is not installed...
+get installed package: `dpkg --get-selections | less | grep 'jdk'`
+
 ```
 openjdk-8-jre:amd64				install
 openjdk-8-jre-headless:amd64			install
 ```
-	purge those packages: `sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless`
-	install new packages: `sudo apt-get install openjdk-9-jre openjdk-9-jdk`
 
-	successful installation (yee but linux is tryhard if you're a newbie - took me way too much time)
-	now beginning to try using MCScanX
-	from manual: MCScanX needs 2 input for the standard and easy use
+purge those packages: `sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless`
+install new packages: `sudo apt-get install openjdk-9-jre openjdk-9-jdk`
+
+successful installation (yee but linux is tryhard if you're a newbie - took me way too much time)
+now beginning to try using MCScanX
+from manual: MCScanX needs 2 input for the standard and easy use
 
 1.  direct Blastp result (available from the data site, using swissprot as db): .blast file
 2.  gene annotations (also available) : .gff file
 	
-	try of generating the .blast file (following manual):
+try of generating the .blast file (following manual):
 
 ```
 jklopfen@acer:~/palindromes/MCS-test$ blastall -i fcan_proteins.fa -d nr -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o fcan.blast
