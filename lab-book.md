@@ -4,22 +4,28 @@ MCScanX: tool used by the springtail people to identify collinear genes block, a
 	
 	Reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3326336/
 
-MCScanX about and download page
-	http://chibba.pgml.uga.edu/mcscan2/
-	Can be installed on linux OS, should we install it on vital-it and try it ? 
+MCScanX about and [download page](http://chibba.pgml.uga.edu/mcscan2/)
+Can be installed on linux OS, should we install it on vital-it and try it ? 
 	
 Data from the springtail people
-	http://animalecology.labs.vu.nl/collembolomics/folsomia/data.php
+[http://animalecology.labs.vu.nl/collembolomics/folsomia/data.php](http://animalecology.labs.vu.nl/collembolomics/folsomia/data.php)
 
 
-	16/10/17: 
 
-	Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
-	to reproduce the results of the springtail paper using their data
-	
+# MCSanX
+
+        16/10/17:
+
+Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
+to reproduce the results of the springtail paper using their data
+
+## Installation	
 
 	ran into an error when installing MCScanX:
-"make
+
+
+```
+make
 g++ struct.cc mcscan.cc read_data.cc out_utils.cc dagchainer.cc msa.cc permutation.cc -o MCScanX
 msa.cc: In function ‘void msa_main(const char*)’:
 msa.cc:289:22: error: ‘chdir’ was not declared in this scope
@@ -27,16 +33,20 @@ msa.cc:289:22: error: ‘chdir’ was not declared in this scope
                       ^
 makefile:2: recipe for target 'mcscanx' failed
 make: *** [mcscanx] Error 1
-"
+```
 
 	found a fix on package's github:
+
+```
 "if you are building on 64-bit you may need to add
 	#include <unistd.h>
 to msa.h, dissect_multiple_alignment.h, and detect_collinear_tandem_arrays.h"
+```
 
 	ran into a new error when installing MCScanX:
 
-"jklopfen@acer:~/fp/MCScanX$ make
+```
+jklopfen@acer:~/fp/MCScanX$ make
 g++ struct.cc mcscan.cc read_data.cc out_utils.cc dagchainer.cc msa.cc permutation.cc -o MCScanX
 g++ struct.cc mcscan_h.cc read_homology.cc out_homology.cc dagchainer.cc msa.cc permutation.cc -o MCScanX_h
 g++ struct.cc dup_classifier.cc read_data.cc out_utils.cc dagchainer.cc cls.cc permutation.cc -o duplicate_gene_classifier
@@ -51,28 +61,34 @@ make[1]: *** [dot_plotter.class] Error 127
 make[1]: Leaving directory '/home/jklopfen/fp/MCScanX/downstream_analyses'
 makefile:2: recipe for target 'mcscanx' failed
 make: *** [mcscanx] Error 2"
+```
 
 	fix: openjdk is not installed...
-	get installed package: dpkg --get-selections | less | grep 'jdk'
+	get installed package: `dpkg --get-selections | less | grep 'jdk'`
+```
 openjdk-8-jre:amd64				install
 openjdk-8-jre-headless:amd64			install
-	purge those packages: sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless
-	install new packages: sudo apt-get install openjdk-9-jre openjdk-9-jdk
+```
+	purge those packages: `sudo apt-get purge openjdk-8-jre openjdk-8-jre-headless`
+	install new packages: `sudo apt-get install openjdk-9-jre openjdk-9-jdk`
 
 	successful installation (yee but linux is tryhard if you're a newbie - took me way too much time)
 	now beginning to try using MCScanX
 	from manual: MCScanX needs 2 input for the standard and easy use
-	1) direct Blastp result (available from the data site, using swissprot as db): .blast file
-	2) gene annotations (also available) : .gff file
+
+1.  direct Blastp result (available from the data site, using swissprot as db): .blast file
+2.  gene annotations (also available) : .gff file
 	
 	try of generating the .blast file (following manual):
+
+```
 jklopfen@acer:~/palindromes/MCS-test$ blastall -i fcan_proteins.fa -d nr -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o fcan.blast
 Warning: [blastp] The parameter -num_descriptions is ignored for output formats > 4 . Use -max_target_seqs to control output
 BLAST Database error: No alias or index file found for protein database [nr] in search path [/home/jklopfen/palindromes/MCS-test::]
 Program failed, try executing the command manually.
+```
 
-	then with the two files avaiable from the site (renamed original fcand_swissprot.blastout 
-	file to .blast for program requirements):
+then with the two files avaiable from the site (renamed original `fcand_swissprot.blastout` file to .blast for program requirements):
 
 jklopfen@acer:~/palindromes/MCS-test$ ls fcand*
 fcand.blast  fcand.gff
