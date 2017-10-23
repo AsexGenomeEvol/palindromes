@@ -201,7 +201,7 @@ Resource usage summary:
 Will use this new blastp results to try the programm
 
 ### 22.10.17
-####Second try of using the programm with the new .blast file
+#### Second try of using the programm with the new .blast file
 
 ```
 jklopfen@acer:~/fp/MCScanX$ ./MCScanX MCS-test-2/fcand
