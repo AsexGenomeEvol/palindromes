@@ -18,7 +18,7 @@ Data from the springtail people
 
 ### 16/10/17 
 
-: Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
+Goal is to use MCScanX (which seems to be the go-to package for palindrome detection)
 to reproduce the results of the springtail paper using their data
 
 ## Installation	
@@ -131,10 +131,10 @@ jklopfen@acer:~/fp/MCScanX/MCS-test$ cat fcand.collinearity
 # Number of all genes: 1
 ##########################################
 ```
-: Results of "hail mary" try: 
+Results of "hail mary" try: 
 html file is empty, collinearity results file is also empty the command obviously failed, need to better understand what I was actually doing and ask for help maybe.
 
-: Possible causes: blastp file was not the one expected for the program, gene annotation file may contain duplicate, ...
+Possible causes: blastp file was not the one expected for the program, gene annotation file may contain duplicate, ...
 
 
 ### 18.10.17
@@ -143,7 +143,7 @@ Will try generating the blastp results out of the example command from the manua
 makeblastdb -in fcand_genome.fa -dbtype prot
 blastall -i fcand_genome.fa -d fcandgenome.fa -p blastp -e 1e-10 -b 5 -v 5 -m 8 -o fcan.blast
 ```
-: This generates an error due to blastall not recognizing the database.
+This generates an error due to blastall not recognizing the database.
 
 ### 20.10.17
 Will try generating the blastp results using similar option but with ncbi+ package 
@@ -155,7 +155,7 @@ module add Blast/ncbi-blast/2.2.31+
 bsub 'makeblastdb -in genome_database.fa -dbtype prot'
 bsub -J blastp  'blastp -query fcand_genome.fa -db genome_database.fa -out fcand.blast -evalue 1e-10 -outfmt 6 -num_alignments 5'
 ```
-: exit because of memory (add "-M 6000000" ?)
+> exit because of memory (add "-M 6000000" ?)
 
 `TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
 Exited with exit code 130.`
@@ -163,8 +163,7 @@ Exited with exit code 130.`
 Seems that the command was wrong anyway, I tried aligning a genome on a genome using blastp, I need to align the proteins on the database of the genome.
 
 `bsub 'makeblastdb -in proteins_database.fa -dbtype prot'`
-> proteins_database.fa is just the genome with another name: named that way because of name conflict
-> the genome database is then proteins_database.fa
+> proteins_database.fa is just the genome with another name: named that way because of name conflict the genome database is then proteins_database.fa
 
 Seems to be wrong, but trying anyway
 Should I make a blast database out of the proteins (fcand_proteins.fa) ?
@@ -173,7 +172,7 @@ Should I change the type of database (-dbtype nucl) since the -in is a genome ?
 #### launch of the blastp on vital-it:
 bsub -J blastp  'blastp -query fcand_proteins.fa -db proteins_database.fa -out fcand.blast -evalue 1e-10 -outfmt 6 -num_alignments 5'
 
-	21.10.17:
+### 21.10.17:
 
 The blastp results were generated and took more than 6 hour to be done. Is it normal ?
 
