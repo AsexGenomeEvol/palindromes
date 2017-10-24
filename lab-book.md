@@ -239,3 +239,37 @@ Generating the direct blastp results is actually aligning the proteins on the pr
 
 #### Generation of the right blast database.
 
+```
+#!/bin/bash
+#BSUB -L /bin/bash
+#BSUB -J makeblastdb
+#BSUB -o fcand_makeblastdb.log
+#BSUB -e fcand_makeblastdb_error.log
+#BSUB -N
+
+module add Blast/ncbi-blast/2.2.31+
+makeblastdb -in fcand_proteins_database.fa -dbtype prot
+```
+> script is stored in `scripts` folder under the name `fcand_makeblastdb.sh`
+
+#### Generation of the right blastp results
+
+```
+#!/bin/bash
+#BSUB -L /bin/bash
+#BSUB -J blastp
+#BSUB -n 16
+#BSUB -R "span[ptile=16]"
+#BSUB -N
+
+module add Blast/ncbi-blast/2.2.31+
+
+blastp -query fcand_proteins.fa -db fcand_proteins_database.fa \
+-out fcand.blast -evalue 1e-10 -outfmt 6 -num_alignments 5 -num_threads 16
+```
+> script is stored in `scripts` folder under the name `fcand_blastp.sh`
+
+Now waiting for the results to be generated. This time I used 16 cores, so I hope it will take less than 6 hour.
+
+
+
