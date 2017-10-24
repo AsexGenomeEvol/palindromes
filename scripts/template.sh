@@ -7,6 +7,7 @@
 #BSUB -n x #number of threads
 #BSUB -M y #memory in byte
 #BSUB -R "rusage[mem=y/1000] span[ptile=x]" #request of memory and threads on the same host
+#BSUB -N
 
 rest of the script
 
