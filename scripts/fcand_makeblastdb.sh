@@ -7,4 +7,4 @@
 
 module add Blast/ncbi-blast/2.2.31+
 
-makeblastdb -in fcand_proteins_database -dbtype prot
+makeblastdb -in fcand_proteins_database.fa -dbtype prot

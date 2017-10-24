@@ -231,3 +231,11 @@ How could fewer genes be discarded ? Do the self-generated blastp actually conta
 
 Anyway, the programm doesn't find any matching genes/proteins from the given input.
 Have to review the published article to get how they should match.. But I can try generating an actually accurate 'direct blastp results' using either another database, or with right parameters. Am I wrong on the link between the queries of blastp and the used database ?
+
+### 24.10.17
+
+After talking with Kamil, I think I figured out what I was doing wrong.
+Generating the direct blastp results is actually aligning the proteins on the proteins as database. What I took as the database for the blastp was the genome, with the parameters `-dbtype prot`, which is irrelevant/incoherent. What needs to be done is a blastp with the proteins as query and database.
+
+#### Generation of the right blast database.
+
