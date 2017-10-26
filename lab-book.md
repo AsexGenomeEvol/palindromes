@@ -522,9 +522,79 @@ We can see that there is an obvious difference: in the bed-converted gff file, t
 
 I will need to review that reference article to know if additionnal information in the gene name is allowed or not, and if other column are allowed, or if the program strictly require a 4-tab delimited input as gff file. This would actually be a gene annotation file with an `.gff` extension, but in strict BED4 format... This is again source of confusion.
 
-Out of a quick review of the [reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3326336/), there is no mention about any usage of MCScanX, other that it was simplified compared to the usage of MCScan. Therefore I will test myself the different interrogations mentioned above.
+Out of a quick review of the [reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3326336/), there is no mention about any usage of MCScanX, other than it was simplified compared to the usage of MCScan. Therefore I will test myself the different interrogations mentioned above.
 
 ### 25.10.17
 
 #### Swap of the column 2 and 4 in the `gff2bed` converted original file
 
+In order to do so I wrote a short python3 script `col_2-4_swapper.py`:
+
+```python3
+import sys
+
+with open(sys.argv[1], 'r') as x, open(sys.argv[2], 'w') as y:
+    for line in x:
+        columns=line.split('\t')
+        columns[2],columns[3] = columns[3],columns[2]
+        columns[1],columns[2] = columns[2],columns[1]
+        y.write('\t'.join(columns))
+```
+> this script take two arguments, first is the file to be read, second is the name of the output file.
+
+Calling of this script
+`$python3 col_2-4_swapper.py fcand.gff new_fcand.gff`
+
+#### Launch of MCScanX:
+```
+jklopfen@acer:~/fp/MCScanX/MCS-test-4$ ../MCScanX ./new_fcand
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+14 alignments generated
+Pairwise collinear blocks written to ./new_fcand.collinearity [6.143 seconds elapsed]
+Writing multiple syntenic blocks to HTML files
+Fcan01_Sc001.html
+[lines omitted]
+Fcan01_Sc162.html
+```
+**First success !**
+
+
+Head of the generated result `new_fcand.collinearity`:
+
+```
+jklopfen@acer:~/fp/MCScanX/MCS-test-4$ head new_fcand.collinearity 
+############### Parameters ###############
+# MATCH_SCORE: 50
+# MATCH_SIZE: 5
+# GAP_PENALTY: -1
+# OVERLAP_WINDOW: 5
+# E_VALUE: 1e-05
+# MAX GAPS: 25
+############### Statistics ###############
+# Number of collinear genes: 207, Percentage: 0.07
+# Number of all genes: 314090
+```
+Having the program to actually run is great, but there is problems:
+1. The number of alignments is not the same. If assuming that these represent the number of syntenic blocks identified, 14 is only a portion of the **55** identified in the paper.
+2. The number of all genes is not the same as in the paper (27'594). 314090 is way too much genes taken into account.
+3. The number of collinear genes is not the same as in the paper (883). 207 is too little collinear genes. 
+
+I will test different format of tab-delimited columns for the gff file.
+
+#### Outcomes depending on different format for `fcand.gff`
+
+| MCS-test-# | 1st col | 2nd col | 3rd col | 4th col  | other cols ? | generation | # of alignments | # of collinear genes | # of all genes | comments |
+|:-------------:|:-------:|:---------:|:-------:|:---------:|:------------:|:--------------------------------------------:|:---------------:|:--------------------:|:--------------:|:-----------------------------------------------------------------------------------------:|
+| **reference** | Sc* | start | end | ???????? | don't matter |  | **55 ?** | **883** | **27'594 ?** | -assuming that # of alignments refers to syntenic blocs -assuming the number of all genes |
+| 3 | Sc | start | end | gene:info | + | g2b | 0 | 0 | 224917 | does not work, but generates 162 empty html files |
+| 4 | Sc | gene:info | start | end | + | g2b + swap | 14 | 207 | 314090 | works: the program needs a gff file in that order |
+| 5 | Sc | gene | start | end | + | g2b + swap + remove info | 32 | 609 | 57468 | contains lots of duplicates, thus the loss in # of all genes |
+| 6 | Sc | gene | start | end | - | g2b + swap + remove-info + remove other cols | 32 | 609 | 57468 | no difference to #5: other cols don't matter |
+| 7 | Sc | gene:info | start | end | - | g2b + swap + remove-other-cols | 14 | 207 | 314090 | no difference to #4: other cols don't matter |
+
+
+
+ 
