@@ -595,6 +595,41 @@ I will test different format of tab-delimited columns for the gff file.
 | 6 | Sc | gene | start | end | - | g2b + swap + remove-info + remove other cols | 32 | 609 | 57468 | no difference to #5: other cols don't matter |
 | 7 | Sc | gene:info | start | end | - | g2b + swap + remove-other-cols | 14 | 207 | 314090 | no difference to #4: other cols don't matter |
 
+to add...
+discussion
 
+| Scaffold # | gene name | start | end |
+|--------------|--------------------------------|-------|------|
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 43 | 168 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:759 | 43 | 168 |
+| Fcan01_Sc001 | Fcan01_00001 | 43 | 5998 |
+| Fcan01_Sc001 | Fcan01_00001-PA | 43 | 5998 |
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 3926 | 4233 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:758 | 3926 | 4233 |
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 4385 | 4568 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:757 | 4385 | 4568 |
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 4910 | 5060 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:756 | 4910 | 5060 |
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 5173 | 5418 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:755 | 5173 | 5418 |
+| Fcan01_Sc001 | Fcan01_00001-PA:cds | 5787 | 5905 |
+| Fcan01_Sc001 | Fcan01_00001-PA:exon:754 | 5787 | 5998 |
+| Fcan01_Sc001 | Fcan01_00001-PA:five_prime_utr | 5905 | 5998 |
+
+#### Using only strict gene-PA
+
+With this format, each gene has a single line that looks like:
+
+| Scaffold # | gene name | start | end |
+|--------------|--------------------------------|-------|------|
+| Fcan01_Sc001 | Fcan01_00001-PA | 43 | 5998 |
+
+Running this gives that output:
+
+| MCS-test-# | 1st col | 2nd col | 3rd col | 4th col  | other cols ? | generation | # of alignments | # of collinear genes | # of all genes | comments |
+|:-------------:|:-------:|:---------:|:-------:|:---------:|:------------:|:--------------------------------------------:|:---------------:|:--------------------:|:--------------:|:-----------------------------------------------------------------------------------------:|
+8 | Sc | gene-PA | start | end | - | g2b + swap + remove-other-cols + remove aliases | **54** | **871** | **28734** | creates a .tandem file - closest to the actual results yet
+
+When looking for palindromes, I *think* that I find 10...
 
  

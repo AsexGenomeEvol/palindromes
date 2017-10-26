@@ -18,5 +18,6 @@ MCScanX needs 2 input for the standard and easy use:
 | 5 | Sc | gene | start | end | + | g2b + swap + remove info | 32 | 609 | 57468 | contains lots of duplicates, thus the loss in # of all genes |
 | 6 | Sc | gene | start | end | - | g2b + swap + remove-info + remove other cols | 32 | 609 | 57468 | no difference to #5: other cols don't matter |
 | 7 | Sc | gene:info | start | end | - | g2b + swap + remove-other-cols | 14 | 207 | 314090 | no difference to #4: other cols don't matter |
+8 | Sc | gene-PA | start | end | - | g2b + swap + remove-other-cols + remove aliases | **54** | **871** | **28734** | creates a .tandem file - closest to the actual results yet
 
 Attempt 1 & 2 are not relevant. Read lab-book for more information.

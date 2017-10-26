@@ -1,0 +1,543 @@
+############### Parameters ###############
+# MATCH_SCORE: 50
+# MATCH_SIZE: 5
+# GAP_PENALTY: -1
+# OVERLAP_WINDOW: 5
+# E_VALUE: 1e-05
+# MAX GAPS: 25
+############### Statistics ###############
+# Number of collinear genes: 871, Percentage: 3.03
+# Number of all genes: 28734
+##########################################
+## Alignment 0: score=281.0 e_value=4e-11 N=6 Fcan01_Sc001&Fcan01_Sc001 minus
+  0-  0:	Fcan01_00755-PA	Fcan01_00870-PA	 3e-105
+  0-  1:	Fcan01_00758-PA	Fcan01_00860-PA	  1e-71
+  0-  2:	Fcan01_00759-PA	Fcan01_00859-PA	      0
+  0-  3:	Fcan01_00766-PA	Fcan01_00849-PA	      0
+  0-  4:	Fcan01_00767-PA	Fcan01_00848-PA	  3e-94
+  0-  5:	Fcan01_00769-PA	Fcan01_00847-PA	 1e-114
+## Alignment 1: score=319.0 e_value=6.8e-12 N=7 Fcan01_Sc001&Fcan01_Sc029 minus
+  1-  0:	Fcan01_00660-PA	Fcan01_23830-PA	 4e-120
+  1-  1:	Fcan01_00661-PA	Fcan01_23829-PA	      0
+  1-  2:	Fcan01_00671-PA	Fcan01_23821-PA	      0
+  1-  3:	Fcan01_00673-PA	Fcan01_23817-PA	  3e-74
+  1-  4:	Fcan01_00681-PA	Fcan01_23804-PA	 5e-173
+  1-  5:	Fcan01_00682-PA	Fcan01_23798-PA	      0
+  1-  6:	Fcan01_00683-PA	Fcan01_23795-PA	      0
+## Alignment 2: score=365.0 e_value=2.2e-14 N=8 Fcan01_Sc004&Fcan01_Sc004 minus
+  2-  0:	Fcan01_08702-PA	Fcan01_08779-PA	  1e-23
+  2-  1:	Fcan01_08712-PA	Fcan01_08754-PA	      0
+  2-  2:	Fcan01_08716-PA	Fcan01_08753-PA	  4e-94
+  2-  3:	Fcan01_08719-PA	Fcan01_08750-PA	      0
+  2-  4:	Fcan01_08720-PA	Fcan01_08748-PA	 2e-101
+  2-  5:	Fcan01_08722-PA	Fcan01_08742-PA	 1e-153
+  2-  6:	Fcan01_08723-PA	Fcan01_08741-PA	 4e-100
+  2-  7:	Fcan01_08724-PA	Fcan01_08740-PA	 2e-178
+## Alignment 3: score=284.0 e_value=2e-12 N=7 Fcan01_Sc004&Fcan01_Sc014 plus
+  3-  0:	Fcan01_08703-PA	Fcan01_18270-PA	  2e-72
+  3-  1:	Fcan01_08704-PA	Fcan01_18272-PA	  1e-57
+  3-  2:	Fcan01_08705-PA	Fcan01_18273-PA	  2e-92
+  3-  3:	Fcan01_08723-PA	Fcan01_18274-PA	  4e-99
+  3-  4:	Fcan01_08744-PA	Fcan01_18283-PA	      0
+  3-  5:	Fcan01_08754-PA	Fcan01_18285-PA	  5e-80
+  3-  6:	Fcan01_08762-PA	Fcan01_18305-PA	      0
+## Alignment 4: score=320.0 e_value=1.3e-12 N=7 Fcan01_Sc004&Fcan01_Sc014 minus
+  4-  0:	Fcan01_08714-PA	Fcan01_18286-PA	 3e-131
+  4-  1:	Fcan01_08719-PA	Fcan01_18283-PA	      0
+  4-  2:	Fcan01_08741-PA	Fcan01_18274-PA	 4e-101
+  4-  3:	Fcan01_08742-PA	Fcan01_18273-PA	  2e-89
+  4-  4:	Fcan01_08743-PA	Fcan01_18272-PA	  2e-20
+  4-  5:	Fcan01_08744-PA	Fcan01_18271-PA	      0
+  4-  6:	Fcan01_08750-PA	Fcan01_18270-PA	  2e-72
+## Alignment 5: score=260.0 e_value=2.1e-08 N=6 Fcan01_Sc004&Fcan01_Sc034 plus
+  5-  0:	Fcan01_08884-PA	Fcan01_24902-PA	      0
+  5-  1:	Fcan01_08886-PA	Fcan01_24916-PA	  9e-63
+  5-  2:	Fcan01_08893-PA	Fcan01_24931-PA	 6e-162
+  5-  3:	Fcan01_08895-PA	Fcan01_24935-PA	  1e-96
+  5-  4:	Fcan01_08896-PA	Fcan01_24942-PA	  2e-69
+  5-  5:	Fcan01_08900-PA	Fcan01_24947-PA	 4e-138
+## Alignment 6: score=678.0 e_value=1.5e-40 N=15 Fcan01_Sc005&Fcan01_Sc005 plus
+  6-  0:	Fcan01_11363-PA	Fcan01_11728-PA	 8e-126
+  6-  1:	Fcan01_11364-PA	Fcan01_11729-PA	      0
+  6-  2:	Fcan01_11366-PA	Fcan01_11733-PA	 6e-170
+  6-  3:	Fcan01_11370-PA	Fcan01_11734-PA	      0
+  6-  4:	Fcan01_11371-PA	Fcan01_11746-PA	  1e-36
+  6-  5:	Fcan01_11374-PA	Fcan01_11762-PA	  7e-58
+  6-  6:	Fcan01_11377-PA	Fcan01_11763-PA	      0
+  6-  7:	Fcan01_11378-PA	Fcan01_11764-PA	  7e-72
+  6-  8:	Fcan01_11379-PA	Fcan01_11766-PA	 6e-126
+  6-  9:	Fcan01_11380-PA	Fcan01_11767-PA	 5e-107
+  6- 10:	Fcan01_11381-PA	Fcan01_11768-PA	 4e-149
+  6- 11:	Fcan01_11383-PA	Fcan01_11770-PA	      0
+  6- 12:	Fcan01_11385-PA	Fcan01_11775-PA	  5e-80
+  6- 13:	Fcan01_11410-PA	Fcan01_11781-PA	  2e-41
+  6- 14:	Fcan01_11419-PA	Fcan01_11782-PA	  8e-70
+## Alignment 7: score=268.0 e_value=6.7e-12 N=6 Fcan01_Sc005&Fcan01_Sc005 minus
+  7-  0:	Fcan01_10213-PA	Fcan01_10486-PA	  7e-50
+  7-  1:	Fcan01_10233-PA	Fcan01_10460-PA	 2e-103
+  7-  2:	Fcan01_10241-PA	Fcan01_10452-PA	      0
+  7-  3:	Fcan01_10242-PA	Fcan01_10451-PA	 1e-163
+  7-  4:	Fcan01_10243-PA	Fcan01_10450-PA	      0
+  7-  5:	Fcan01_10244-PA	Fcan01_10449-PA	 7e-150
+## Alignment 8: score=335.0 e_value=6.6e-16 N=8 Fcan01_Sc005&Fcan01_Sc012 plus
+  8-  0:	Fcan01_11472-PA	Fcan01_17176-PA	  2e-62
+  8-  1:	Fcan01_11479-PA	Fcan01_17197-PA	      0
+  8-  2:	Fcan01_11481-PA	Fcan01_17200-PA	      0
+  8-  3:	Fcan01_11482-PA	Fcan01_17201-PA	      0
+  8-  4:	Fcan01_11498-PA	Fcan01_17208-PA	      0
+  8-  5:	Fcan01_11521-PA	Fcan01_17215-PA	 2e-107
+  8-  6:	Fcan01_11525-PA	Fcan01_17222-PA	      0
+  8-  7:	Fcan01_11526-PA	Fcan01_17223-PA	      0
+## Alignment 9: score=300.0 e_value=9.6e-08 N=6 Fcan01_Sc005&Fcan01_Sc012 minus
+  9-  0:	Fcan01_11575-PA	Fcan01_17194-PA	      0
+  9-  1:	Fcan01_11576-PA	Fcan01_17193-PA	  2e-76
+  9-  2:	Fcan01_11577-PA	Fcan01_17192-PA	      0
+  9-  3:	Fcan01_11578-PA	Fcan01_17191-PA	      0
+  9-  4:	Fcan01_11579-PA	Fcan01_17190-PA	 2e-158
+  9-  5:	Fcan01_11580-PA	Fcan01_17189-PA	      0
+## Alignment 10: score=591.0 e_value=1.2e-25 N=12 Fcan01_Sc005&Fcan01_Sc014 plus
+ 10-  0:	Fcan01_11822-PA	Fcan01_18085-PA	      0
+ 10-  1:	Fcan01_11823-PA	Fcan01_18087-PA	      0
+ 10-  2:	Fcan01_11824-PA	Fcan01_18088-PA	 3e-129
+ 10-  3:	Fcan01_11825-PA	Fcan01_18090-PA	      0
+ 10-  4:	Fcan01_11827-PA	Fcan01_18095-PA	 3e-126
+ 10-  5:	Fcan01_11828-PA	Fcan01_18096-PA	      0
+ 10-  6:	Fcan01_11830-PA	Fcan01_18097-PA	 3e-120
+ 10-  7:	Fcan01_11832-PA	Fcan01_18098-PA	 3e-144
+ 10-  8:	Fcan01_11833-PA	Fcan01_18099-PA	 5e-103
+ 10-  9:	Fcan01_11834-PA	Fcan01_18100-PA	      0
+ 10- 10:	Fcan01_11835-PA	Fcan01_18101-PA	      0
+ 10- 11:	Fcan01_11836-PA	Fcan01_18103-PA	      0
+## Alignment 11: score=255.0 e_value=1.9e-10 N=6 Fcan01_Sc005&Fcan01_Sc023 minus
+ 11-  0:	Fcan01_11707-PA	Fcan01_22203-PA	  2e-36
+ 11-  1:	Fcan01_11732-PA	Fcan01_22197-PA	  1e-64
+ 11-  2:	Fcan01_11736-PA	Fcan01_22180-PA	  9e-80
+ 11-  3:	Fcan01_11739-PA	Fcan01_22178-PA	      0
+ 11-  4:	Fcan01_11740-PA	Fcan01_22177-PA	 5e-169
+ 11-  5:	Fcan01_11744-PA	Fcan01_22175-PA	 5e-135
+## Alignment 12: score=462.0 e_value=4.1e-23 N=10 Fcan01_Sc005&Fcan01_Sc032 plus
+ 12-  0:	Fcan01_11480-PA	Fcan01_24412-PA	      0
+ 12-  1:	Fcan01_11506-PA	Fcan01_24425-PA	 4e-155
+ 12-  2:	Fcan01_11507-PA	Fcan01_24426-PA	 4e-110
+ 12-  3:	Fcan01_11509-PA	Fcan01_24428-PA	      0
+ 12-  4:	Fcan01_11512-PA	Fcan01_24429-PA	 4e-112
+ 12-  5:	Fcan01_11513-PA	Fcan01_24430-PA	      0
+ 12-  6:	Fcan01_11519-PA	Fcan01_24431-PA	      0
+ 12-  7:	Fcan01_11521-PA	Fcan01_24433-PA	 3e-147
+ 12-  8:	Fcan01_11523-PA	Fcan01_24434-PA	 5e-146
+ 12-  9:	Fcan01_11525-PA	Fcan01_24438-PA	      0
+## Alignment 13: score=1205.0 e_value=2.6e-81 N=26 Fcan01_Sc005&Fcan01_Sc032 minus
+ 13-  0:	Fcan01_11394-PA	Fcan01_24524-PA	      0
+ 13-  1:	Fcan01_11395-PA	Fcan01_24523-PA	  7e-33
+ 13-  2:	Fcan01_11399-PA	Fcan01_24522-PA	 1e-119
+ 13-  3:	Fcan01_11425-PA	Fcan01_24517-PA	      0
+ 13-  4:	Fcan01_11432-PA	Fcan01_24515-PA	      0
+ 13-  5:	Fcan01_11433-PA	Fcan01_24511-PA	      0
+ 13-  6:	Fcan01_11434-PA	Fcan01_24510-PA	      0
+ 13-  7:	Fcan01_11435-PA	Fcan01_24508-PA	  5e-99
+ 13-  8:	Fcan01_11436-PA	Fcan01_24507-PA	 2e-129
+ 13-  9:	Fcan01_11438-PA	Fcan01_24502-PA	      0
+ 13- 10:	Fcan01_11448-PA	Fcan01_24497-PA	      0
+ 13- 11:	Fcan01_11452-PA	Fcan01_24490-PA	      0
+ 13- 12:	Fcan01_11453-PA	Fcan01_24489-PA	  5e-72
+ 13- 13:	Fcan01_11456-PA	Fcan01_24484-PA	  4e-74
+ 13- 14:	Fcan01_11467-PA	Fcan01_24480-PA	      0
+ 13- 15:	Fcan01_11468-PA	Fcan01_24479-PA	      0
+ 13- 16:	Fcan01_11469-PA	Fcan01_24478-PA	 7e-146
+ 13- 17:	Fcan01_11471-PA	Fcan01_24476-PA	      0
+ 13- 18:	Fcan01_11481-PA	Fcan01_24473-PA	      0
+ 13- 19:	Fcan01_11489-PA	Fcan01_24472-PA	  1e-72
+ 13- 20:	Fcan01_11492-PA	Fcan01_24469-PA	      0
+ 13- 21:	Fcan01_11496-PA	Fcan01_24466-PA	  9e-75
+ 13- 22:	Fcan01_11497-PA	Fcan01_24465-PA	      0
+ 13- 23:	Fcan01_11498-PA	Fcan01_24464-PA	      0
+ 13- 24:	Fcan01_11501-PA	Fcan01_24462-PA	 2e-166
+ 13- 25:	Fcan01_11502-PA	Fcan01_24461-PA	      0
+## Alignment 14: score=258.0 e_value=9.9e-10 N=6 Fcan01_Sc005&Fcan01_Sc058 plus
+ 14-  0:	Fcan01_11537-PA	Fcan01_27824-PA	  6e-86
+ 14-  1:	Fcan01_11544-PA	Fcan01_27826-PA	      0
+ 14-  2:	Fcan01_11548-PA	Fcan01_27833-PA	 2e-138
+ 14-  3:	Fcan01_11554-PA	Fcan01_27836-PA	 6e-149
+ 14-  4:	Fcan01_11555-PA	Fcan01_27837-PA	  2e-65
+ 14-  5:	Fcan01_11581-PA	Fcan01_27852-PA	  2e-13
+## Alignment 15: score=459.0 e_value=9.5e-20 N=10 Fcan01_Sc005&Fcan01_Sc065 plus
+ 15-  0:	Fcan01_11140-PA	Fcan01_28140-PA	      0
+ 15-  1:	Fcan01_11143-PA	Fcan01_28142-PA	      0
+ 15-  2:	Fcan01_11144-PA	Fcan01_28145-PA	  2e-98
+ 15-  3:	Fcan01_11146-PA	Fcan01_28156-PA	  3e-91
+ 15-  4:	Fcan01_11147-PA	Fcan01_28158-PA	 8e-157
+ 15-  5:	Fcan01_11152-PA	Fcan01_28160-PA	      0
+ 15-  6:	Fcan01_11166-PA	Fcan01_28161-PA	      0
+ 15-  7:	Fcan01_11170-PA	Fcan01_28162-PA	      0
+ 15-  8:	Fcan01_11173-PA	Fcan01_28164-PA	  2e-79
+ 15-  9:	Fcan01_11178-PA	Fcan01_28165-PA	  2e-90
+## Alignment 16: score=298.0 e_value=3.4e-08 N=6 Fcan01_Sc005&Fcan01_Sc078 minus
+ 16-  0:	Fcan01_11832-PA	Fcan01_28545-PA	  4e-68
+ 16-  1:	Fcan01_11833-PA	Fcan01_28543-PA	 6e-104
+ 16-  2:	Fcan01_11834-PA	Fcan01_28542-PA	      0
+ 16-  3:	Fcan01_11835-PA	Fcan01_28540-PA	      0
+ 16-  4:	Fcan01_11836-PA	Fcan01_28539-PA	      0
+ 16-  5:	Fcan01_11837-PA	Fcan01_28538-PA	      0
+## Alignment 17: score=478.0 e_value=6.2e-21 N=10 Fcan01_Sc010&Fcan01_Sc010 minus
+ 17-  0:	Fcan01_15455-PA	Fcan01_15773-PA	  4e-29
+ 17-  1:	Fcan01_15461-PA	Fcan01_15772-PA	  7e-89
+ 17-  2:	Fcan01_15462-PA	Fcan01_15771-PA	      0
+ 17-  3:	Fcan01_15465-PA	Fcan01_15767-PA	      0
+ 17-  4:	Fcan01_15466-PA	Fcan01_15766-PA	 1e-111
+ 17-  5:	Fcan01_15467-PA	Fcan01_15765-PA	 5e-106
+ 17-  6:	Fcan01_15469-PA	Fcan01_15764-PA	 5e-101
+ 17-  7:	Fcan01_15471-PA	Fcan01_15760-PA	 3e-120
+ 17-  8:	Fcan01_15476-PA	Fcan01_15758-PA	  5e-84
+ 17-  9:	Fcan01_15483-PA	Fcan01_15751-PA	  1e-82
+## Alignment 18: score=344.0 e_value=6.1e-14 N=7 Fcan01_Sc010&Fcan01_Sc011 minus
+ 18-  0:	Fcan01_15893-PA	Fcan01_16496-PA	 1e-123
+ 18-  1:	Fcan01_15900-PA	Fcan01_16492-PA	  2e-21
+ 18-  2:	Fcan01_15901-PA	Fcan01_16491-PA	 4e-118
+ 18-  3:	Fcan01_15902-PA	Fcan01_16490-PA	  4e-59
+ 18-  4:	Fcan01_15903-PA	Fcan01_16489-PA	 7e-137
+ 18-  5:	Fcan01_15904-PA	Fcan01_16488-PA	      0
+ 18-  6:	Fcan01_15905-PA	Fcan01_16487-PA	  1e-78
+## Alignment 19: score=722.0 e_value=4.1e-35 N=15 Fcan01_Sc010&Fcan01_Sc044 plus
+ 19-  0:	Fcan01_15547-PA	Fcan01_26611-PA	      0
+ 19-  1:	Fcan01_15551-PA	Fcan01_26612-PA	  4e-48
+ 19-  2:	Fcan01_15553-PA	Fcan01_26614-PA	      0
+ 19-  3:	Fcan01_15558-PA	Fcan01_26619-PA	      0
+ 19-  4:	Fcan01_15559-PA	Fcan01_26620-PA	      0
+ 19-  5:	Fcan01_15560-PA	Fcan01_26622-PA	  9e-40
+ 19-  6:	Fcan01_15562-PA	Fcan01_26625-PA	 2e-164
+ 19-  7:	Fcan01_15564-PA	Fcan01_26627-PA	 2e-158
+ 19-  8:	Fcan01_15566-PA	Fcan01_26632-PA	  1e-86
+ 19-  9:	Fcan01_15568-PA	Fcan01_26634-PA	 2e-119
+ 19- 10:	Fcan01_15570-PA	Fcan01_26639-PA	  3e-47
+ 19- 11:	Fcan01_15572-PA	Fcan01_26641-PA	 3e-180
+ 19- 12:	Fcan01_15574-PA	Fcan01_26642-PA	      0
+ 19- 13:	Fcan01_15577-PA	Fcan01_26647-PA	      0
+ 19- 14:	Fcan01_15579-PA	Fcan01_26649-PA	      0
+## Alignment 20: score=805.0 e_value=5.2e-47 N=17 Fcan01_Sc010&Fcan01_Sc044 minus
+ 20-  0:	Fcan01_15338-PA	Fcan01_26603-PA	      0
+ 20-  1:	Fcan01_15339-PA	Fcan01_26602-PA	 2e-121
+ 20-  2:	Fcan01_15342-PA	Fcan01_26600-PA	  3e-48
+ 20-  3:	Fcan01_15345-PA	Fcan01_26598-PA	  9e-48
+ 20-  4:	Fcan01_15355-PA	Fcan01_26591-PA	      0
+ 20-  5:	Fcan01_15361-PA	Fcan01_26587-PA	 2e-160
+ 20-  6:	Fcan01_15364-PA	Fcan01_26584-PA	      0
+ 20-  7:	Fcan01_15368-PA	Fcan01_26580-PA	      0
+ 20-  8:	Fcan01_15372-PA	Fcan01_26577-PA	  8e-68
+ 20-  9:	Fcan01_15374-PA	Fcan01_26576-PA	      0
+ 20- 10:	Fcan01_15376-PA	Fcan01_26575-PA	      0
+ 20- 11:	Fcan01_15378-PA	Fcan01_26574-PA	  4e-47
+ 20- 12:	Fcan01_15393-PA	Fcan01_26571-PA	  3e-61
+ 20- 13:	Fcan01_15395-PA	Fcan01_26569-PA	  7e-63
+ 20- 14:	Fcan01_15396-PA	Fcan01_26568-PA	 2e-145
+ 20- 15:	Fcan01_15397-PA	Fcan01_26567-PA	  3e-24
+ 20- 16:	Fcan01_15399-PA	Fcan01_26566-PA	 5e-101
+## Alignment 21: score=253.0 e_value=1.2e-08 N=6 Fcan01_Sc010&Fcan01_Sc044 minus
+ 21-  0:	Fcan01_15351-PA	Fcan01_26598-PA	      0
+ 21-  1:	Fcan01_15358-PA	Fcan01_26586-PA	 4e-149
+ 21-  2:	Fcan01_15367-PA	Fcan01_26578-PA	  2e-41
+ 21-  3:	Fcan01_15377-PA	Fcan01_26572-PA	  7e-80
+ 21-  4:	Fcan01_15382-PA	Fcan01_26571-PA	  6e-61
+ 21-  5:	Fcan01_15398-PA	Fcan01_26565-PA	  2e-77
+## Alignment 22: score=816.0 e_value=2e-45 N=17 Fcan01_Sc010&Fcan01_Sc046 minus
+ 22-  0:	Fcan01_15389-PA	Fcan01_26899-PA	      0
+ 22-  1:	Fcan01_15396-PA	Fcan01_26896-PA	  3e-76
+ 22-  2:	Fcan01_15397-PA	Fcan01_26895-PA	  3e-22
+ 22-  3:	Fcan01_15398-PA	Fcan01_26894-PA	      0
+ 22-  4:	Fcan01_15400-PA	Fcan01_26888-PA	  5e-51
+ 22-  5:	Fcan01_15401-PA	Fcan01_26887-PA	  1e-40
+ 22-  6:	Fcan01_15406-PA	Fcan01_26886-PA	  2e-69
+ 22-  7:	Fcan01_15412-PA	Fcan01_26882-PA	 2e-142
+ 22-  8:	Fcan01_15415-PA	Fcan01_26879-PA	 3e-106
+ 22-  9:	Fcan01_15416-PA	Fcan01_26878-PA	  2e-96
+ 22- 10:	Fcan01_15417-PA	Fcan01_26877-PA	      0
+ 22- 11:	Fcan01_15418-PA	Fcan01_26876-PA	 2e-135
+ 22- 12:	Fcan01_15421-PA	Fcan01_26873-PA	      0
+ 22- 13:	Fcan01_15422-PA	Fcan01_26872-PA	  1e-49
+ 22- 14:	Fcan01_15428-PA	Fcan01_26868-PA	  7e-84
+ 22- 15:	Fcan01_15431-PA	Fcan01_26866-PA	  2e-88
+ 22- 16:	Fcan01_15433-PA	Fcan01_26862-PA	  1e-28
+## Alignment 23: score=596.0 e_value=8.9e-34 N=13 Fcan01_Sc010&Fcan01_Sc046 minus
+ 23-  0:	Fcan01_15597-PA	Fcan01_26836-PA	      0
+ 23-  1:	Fcan01_15598-PA	Fcan01_26835-PA	 9e-123
+ 23-  2:	Fcan01_15606-PA	Fcan01_26834-PA	      0
+ 23-  3:	Fcan01_15616-PA	Fcan01_26823-PA	  6e-25
+ 23-  4:	Fcan01_15623-PA	Fcan01_26822-PA	  6e-57
+ 23-  5:	Fcan01_15624-PA	Fcan01_26821-PA	      0
+ 23-  6:	Fcan01_15627-PA	Fcan01_26817-PA	 7e-147
+ 23-  7:	Fcan01_15629-PA	Fcan01_26815-PA	      0
+ 23-  8:	Fcan01_15637-PA	Fcan01_26812-PA	 2e-103
+ 23-  9:	Fcan01_15641-PA	Fcan01_26808-PA	 6e-169
+ 23- 10:	Fcan01_15642-PA	Fcan01_26806-PA	      0
+ 23- 11:	Fcan01_15643-PA	Fcan01_26805-PA	 1e-164
+ 23- 12:	Fcan01_15660-PA	Fcan01_26789-PA	 5e-161
+## Alignment 24: score=258.0 e_value=4.3e-08 N=6 Fcan01_Sc010&Fcan01_Sc046 minus
+ 24-  0:	Fcan01_15386-PA	Fcan01_26897-PA	 3e-117
+ 24-  1:	Fcan01_15402-PA	Fcan01_26891-PA	  3e-50
+ 24-  2:	Fcan01_15404-PA	Fcan01_26885-PA	 1e-102
+ 24-  3:	Fcan01_15411-PA	Fcan01_26880-PA	  4e-65
+ 24-  4:	Fcan01_15419-PA	Fcan01_26870-PA	      0
+ 24-  5:	Fcan01_15427-PA	Fcan01_26867-PA	  1e-29
+## Alignment 25: score=276.0 e_value=1.6e-09 N=6 Fcan01_Sc010&Fcan01_Sc051 minus
+ 25-  0:	Fcan01_15411-PA	Fcan01_27390-PA	  8e-75
+ 25-  1:	Fcan01_15415-PA	Fcan01_27389-PA	 3e-106
+ 25-  2:	Fcan01_15429-PA	Fcan01_27387-PA	  5e-81
+ 25-  3:	Fcan01_15431-PA	Fcan01_27386-PA	  5e-86
+ 25-  4:	Fcan01_15434-PA	Fcan01_27385-PA	  2e-59
+ 25-  5:	Fcan01_15440-PA	Fcan01_27383-PA	      0
+## Alignment 26: score=324.0 e_value=6.7e-17 N=8 Fcan01_Sc012&Fcan01_Sc030 plus
+ 26-  0:	Fcan01_17169-PA	Fcan01_24053-PA	 5e-108
+ 26-  1:	Fcan01_17174-PA	Fcan01_24054-PA	      0
+ 26-  2:	Fcan01_17175-PA	Fcan01_24062-PA	 3e-173
+ 26-  3:	Fcan01_17187-PA	Fcan01_24077-PA	 4e-147
+ 26-  4:	Fcan01_17189-PA	Fcan01_24078-PA	 3e-175
+ 26-  5:	Fcan01_17190-PA	Fcan01_24081-PA	 2e-161
+ 26-  6:	Fcan01_17194-PA	Fcan01_24105-PA	      0
+ 26-  7:	Fcan01_17217-PA	Fcan01_24131-PA	  5e-48
+## Alignment 27: score=272.0 e_value=3.5e-12 N=6 Fcan01_Sc012&Fcan01_Sc031 minus
+ 27-  0:	Fcan01_17247-PA	Fcan01_24303-PA	      0
+ 27-  1:	Fcan01_17248-PA	Fcan01_24302-PA	 1e-161
+ 27-  2:	Fcan01_17250-PA	Fcan01_24300-PA	      0
+ 27-  3:	Fcan01_17251-PA	Fcan01_24299-PA	      0
+ 27-  4:	Fcan01_17252-PA	Fcan01_24296-PA	  1e-26
+ 27-  5:	Fcan01_17278-PA	Fcan01_24282-PA	      0
+## Alignment 28: score=272.0 e_value=6.3e-09 N=6 Fcan01_Sc012&Fcan01_Sc032 plus
+ 28-  0:	Fcan01_17173-PA	Fcan01_24499-PA	 2e-119
+ 28-  1:	Fcan01_17175-PA	Fcan01_24500-PA	 2e-149
+ 28-  2:	Fcan01_17186-PA	Fcan01_24501-PA	      0
+ 28-  3:	Fcan01_17202-PA	Fcan01_24506-PA	 3e-148
+ 28-  4:	Fcan01_17203-PA	Fcan01_24507-PA	 4e-123
+ 28-  5:	Fcan01_17205-PA	Fcan01_24510-PA	      0
+## Alignment 29: score=336.0 e_value=3.5e-15 N=8 Fcan01_Sc012&Fcan01_Sc032 minus
+ 29-  0:	Fcan01_17174-PA	Fcan01_24502-PA	      0
+ 29-  1:	Fcan01_17175-PA	Fcan01_24500-PA	 2e-149
+ 29-  2:	Fcan01_17176-PA	Fcan01_24490-PA	  2e-55
+ 29-  3:	Fcan01_17198-PA	Fcan01_24474-PA	  2e-98
+ 29-  4:	Fcan01_17200-PA	Fcan01_24473-PA	      0
+ 29-  5:	Fcan01_17208-PA	Fcan01_24464-PA	      0
+ 29-  6:	Fcan01_17221-PA	Fcan01_24439-PA	 2e-179
+ 29-  7:	Fcan01_17222-PA	Fcan01_24438-PA	      0
+## Alignment 30: score=255.0 e_value=9.7e-11 N=6 Fcan01_Sc013&Fcan01_Sc013 minus
+ 30-  0:	Fcan01_17631-PA	Fcan01_17709-PA	 1e-155
+ 30-  1:	Fcan01_17634-PA	Fcan01_17690-PA	  1e-58
+ 30-  2:	Fcan01_17645-PA	Fcan01_17687-PA	 3e-119
+ 30-  3:	Fcan01_17646-PA	Fcan01_17686-PA	      0
+ 30-  4:	Fcan01_17647-PA	Fcan01_17685-PA	  3e-29
+ 30-  5:	Fcan01_17662-PA	Fcan01_17667-PA	  4e-98
+## Alignment 31: score=388.0 e_value=1.1e-16 N=9 Fcan01_Sc013&Fcan01_Sc018 plus
+ 31-  0:	Fcan01_17872-PA	Fcan01_20132-PA	      0
+ 31-  1:	Fcan01_17875-PA	Fcan01_20139-PA	 2e-103
+ 31-  2:	Fcan01_17890-PA	Fcan01_20149-PA	 6e-135
+ 31-  3:	Fcan01_17892-PA	Fcan01_20152-PA	 2e-126
+ 31-  4:	Fcan01_17895-PA	Fcan01_20154-PA	 6e-137
+ 31-  5:	Fcan01_17898-PA	Fcan01_20163-PA	 8e-115
+ 31-  6:	Fcan01_17901-PA	Fcan01_20166-PA	 4e-118
+ 31-  7:	Fcan01_17914-PA	Fcan01_20184-PA	 2e-134
+ 31-  8:	Fcan01_17926-PA	Fcan01_20194-PA	      0
+## Alignment 32: score=260.0 e_value=8.4e-11 N=7 Fcan01_Sc013&Fcan01_Sc018 plus
+ 32-  0:	Fcan01_17885-PA	Fcan01_19866-PA	 8e-106
+ 32-  1:	Fcan01_17890-PA	Fcan01_19878-PA	 3e-120
+ 32-  2:	Fcan01_17896-PA	Fcan01_19881-PA	 7e-100
+ 32-  3:	Fcan01_17914-PA	Fcan01_19888-PA	 4e-114
+ 32-  4:	Fcan01_17924-PA	Fcan01_19896-PA	 9e-144
+ 32-  5:	Fcan01_17944-PA	Fcan01_19920-PA	 8e-170
+ 32-  6:	Fcan01_17970-PA	Fcan01_19945-PA	  5e-48
+## Alignment 33: score=318.0 e_value=1.3e-15 N=7 Fcan01_Sc013&Fcan01_Sc032 minus
+ 33-  0:	Fcan01_17692-PA	Fcan01_24583-PA	 2e-100
+ 33-  1:	Fcan01_17693-PA	Fcan01_24582-PA	 3e-103
+ 33-  2:	Fcan01_17719-PA	Fcan01_24556-PA	 2e-169
+ 33-  3:	Fcan01_17720-PA	Fcan01_24555-PA	      0
+ 33-  4:	Fcan01_17721-PA	Fcan01_24552-PA	 1e-138
+ 33-  5:	Fcan01_17723-PA	Fcan01_24547-PA	  1e-89
+ 33-  6:	Fcan01_17725-PA	Fcan01_24546-PA	  5e-81
+## Alignment 34: score=293.0 e_value=2.3e-08 N=6 Fcan01_Sc015&Fcan01_Sc052 plus
+ 34-  0:	Fcan01_18778-PA	Fcan01_27461-PA	      0
+ 34-  1:	Fcan01_18779-PA	Fcan01_27462-PA	 7e-145
+ 34-  2:	Fcan01_18782-PA	Fcan01_27464-PA	 1e-150
+ 34-  3:	Fcan01_18783-PA	Fcan01_27470-PA	      0
+ 34-  4:	Fcan01_18784-PA	Fcan01_27471-PA	  4e-73
+ 34-  5:	Fcan01_18785-PA	Fcan01_27472-PA	  1e-57
+## Alignment 35: score=1094.0 e_value=6.7e-68 N=23 Fcan01_Sc016&Fcan01_Sc044 minus
+ 35-  0:	Fcan01_19004-PA	Fcan01_26564-PA	  1e-40
+ 35-  1:	Fcan01_19007-PA	Fcan01_26563-PA	 2e-110
+ 35-  2:	Fcan01_19015-PA	Fcan01_26561-PA	 3e-114
+ 35-  3:	Fcan01_19017-PA	Fcan01_26560-PA	      0
+ 35-  4:	Fcan01_19019-PA	Fcan01_26559-PA	      0
+ 35-  5:	Fcan01_19027-PA	Fcan01_26558-PA	  7e-32
+ 35-  6:	Fcan01_19031-PA	Fcan01_26557-PA	      0
+ 35-  7:	Fcan01_19033-PA	Fcan01_26554-PA	  6e-78
+ 35-  8:	Fcan01_19035-PA	Fcan01_26552-PA	 2e-101
+ 35-  9:	Fcan01_19036-PA	Fcan01_26551-PA	  1e-21
+ 35- 10:	Fcan01_19037-PA	Fcan01_26549-PA	      0
+ 35- 11:	Fcan01_19038-PA	Fcan01_26546-PA	      0
+ 35- 12:	Fcan01_19043-PA	Fcan01_26540-PA	 5e-105
+ 35- 13:	Fcan01_19045-PA	Fcan01_26538-PA	      0
+ 35- 14:	Fcan01_19047-PA	Fcan01_26537-PA	      0
+ 35- 15:	Fcan01_19048-PA	Fcan01_26536-PA	      0
+ 35- 16:	Fcan01_19054-PA	Fcan01_26535-PA	  5e-91
+ 35- 17:	Fcan01_19055-PA	Fcan01_26531-PA	  2e-73
+ 35- 18:	Fcan01_19065-PA	Fcan01_26521-PA	      0
+ 35- 19:	Fcan01_19066-PA	Fcan01_26519-PA	  1e-55
+ 35- 20:	Fcan01_19071-PA	Fcan01_26518-PA	 2e-163
+ 35- 21:	Fcan01_19072-PA	Fcan01_26517-PA	      0
+ 35- 22:	Fcan01_19073-PA	Fcan01_26516-PA	  4e-85
+## Alignment 36: score=268.0 e_value=3.1e-09 N=6 Fcan01_Sc016&Fcan01_Sc071 minus
+ 36-  0:	Fcan01_19133-PA	Fcan01_28423-PA	      0
+ 36-  1:	Fcan01_19134-PA	Fcan01_28421-PA	      0
+ 36-  2:	Fcan01_19145-PA	Fcan01_28418-PA	  2e-84
+ 36-  3:	Fcan01_19163-PA	Fcan01_28417-PA	  4e-98
+ 36-  4:	Fcan01_19168-PA	Fcan01_28416-PA	      0
+ 36-  5:	Fcan01_19169-PA	Fcan01_28415-PA	 1e-102
+## Alignment 37: score=297.0 e_value=1.8e-14 N=8 Fcan01_Sc018&Fcan01_Sc018 plus
+ 37-  0:	Fcan01_19877-PA	Fcan01_20089-PA	 3e-175
+ 37-  1:	Fcan01_19882-PA	Fcan01_20095-PA	      0
+ 37-  2:	Fcan01_19884-PA	Fcan01_20101-PA	  1e-72
+ 37-  3:	Fcan01_19910-PA	Fcan01_20126-PA	 4e-124
+ 37-  4:	Fcan01_19932-PA	Fcan01_20129-PA	  8e-27
+ 37-  5:	Fcan01_19940-PA	Fcan01_20139-PA	      0
+ 37-  6:	Fcan01_19957-PA	Fcan01_20142-PA	  4e-40
+ 37-  7:	Fcan01_19980-PA	Fcan01_20161-PA	      0
+## Alignment 38: score=270.0 e_value=1.9e-08 N=6 Fcan01_Sc018&Fcan01_Sc018 plus
+ 38-  0:	Fcan01_19866-PA	Fcan01_20159-PA	 2e-104
+ 38-  1:	Fcan01_19870-PA	Fcan01_20163-PA	 2e-124
+ 38-  2:	Fcan01_19873-PA	Fcan01_20164-PA	      0
+ 38-  3:	Fcan01_19878-PA	Fcan01_20166-PA	 6e-112
+ 38-  4:	Fcan01_19881-PA	Fcan01_20182-PA	 5e-128
+ 38-  5:	Fcan01_19888-PA	Fcan01_20184-PA	 1e-164
+## Alignment 39: score=284.0 e_value=1.8e-11 N=7 Fcan01_Sc018&Fcan01_Sc018 minus
+ 39-  0:	Fcan01_19866-PA	Fcan01_20183-PA	 4e-135
+ 39-  1:	Fcan01_19873-PA	Fcan01_20164-PA	      0
+ 39-  2:	Fcan01_19878-PA	Fcan01_20154-PA	 7e-124
+ 39-  3:	Fcan01_19887-PA	Fcan01_20150-PA	  4e-66
+ 39-  4:	Fcan01_19898-PA	Fcan01_20149-PA	 3e-129
+ 39-  5:	Fcan01_19901-PA	Fcan01_20140-PA	 2e-101
+ 39-  6:	Fcan01_19910-PA	Fcan01_20126-PA	 4e-124
+## Alignment 40: score=251.0 e_value=3.3e-11 N=6 Fcan01_Sc018&Fcan01_Sc019 plus
+ 40-  0:	Fcan01_20272-PA	Fcan01_20825-PA	      0
+ 40-  1:	Fcan01_20297-PA	Fcan01_20833-PA	  3e-62
+ 40-  2:	Fcan01_20301-PA	Fcan01_20845-PA	  1e-67
+ 40-  3:	Fcan01_20303-PA	Fcan01_20847-PA	      0
+ 40-  4:	Fcan01_20307-PA	Fcan01_20848-PA	 1e-145
+ 40-  5:	Fcan01_20309-PA	Fcan01_20859-PA	 6e-156
+## Alignment 41: score=379.0 e_value=9.1e-18 N=8 Fcan01_Sc023&Fcan01_Sc023 minus
+ 41-  0:	Fcan01_22184-PA	Fcan01_22221-PA	 1e-164
+ 41-  1:	Fcan01_22185-PA	Fcan01_22220-PA	 1e-112
+ 41-  2:	Fcan01_22186-PA	Fcan01_22219-PA	      0
+ 41-  3:	Fcan01_22187-PA	Fcan01_22218-PA	 7e-100
+ 41-  4:	Fcan01_22188-PA	Fcan01_22217-PA	      0
+ 41-  5:	Fcan01_22189-PA	Fcan01_22216-PA	      0
+ 41-  6:	Fcan01_22190-PA	Fcan01_22215-PA	  8e-67
+ 41-  7:	Fcan01_22192-PA	Fcan01_22193-PA	  1e-72
+## Alignment 42: score=350.0 e_value=3.5e-10 N=7 Fcan01_Sc023&Fcan01_Sc023 minus
+ 42-  0:	Fcan01_22184-PA	Fcan01_22228-PA	      0
+ 42-  1:	Fcan01_22185-PA	Fcan01_22227-PA	      0
+ 42-  2:	Fcan01_22186-PA	Fcan01_22226-PA	      0
+ 42-  3:	Fcan01_22187-PA	Fcan01_22225-PA	 7e-100
+ 42-  4:	Fcan01_22188-PA	Fcan01_22224-PA	      0
+ 42-  5:	Fcan01_22189-PA	Fcan01_22223-PA	      0
+ 42-  6:	Fcan01_22190-PA	Fcan01_22222-PA	 7e-136
+## Alignment 43: score=293.0 e_value=5e-08 N=6 Fcan01_Sc026&Fcan01_Sc030 plus
+ 43-  0:	Fcan01_22887-PA	Fcan01_23982-PA	 3e-111
+ 43-  1:	Fcan01_22891-PA	Fcan01_23983-PA	 8e-131
+ 43-  2:	Fcan01_22892-PA	Fcan01_23985-PA	 3e-106
+ 43-  3:	Fcan01_22893-PA	Fcan01_23989-PA	      0
+ 43-  4:	Fcan01_22894-PA	Fcan01_23990-PA	  4e-88
+ 43-  5:	Fcan01_22895-PA	Fcan01_23991-PA	 3e-130
+## Alignment 44: score=265.0 e_value=2.2e-09 N=6 Fcan01_Sc026&Fcan01_Sc030 plus
+ 44-  0:	Fcan01_22744-PA	Fcan01_24023-PA	      0
+ 44-  1:	Fcan01_22747-PA	Fcan01_24024-PA	  3e-71
+ 44-  2:	Fcan01_22749-PA	Fcan01_24025-PA	 2e-117
+ 44-  3:	Fcan01_22752-PA	Fcan01_24028-PA	  1e-14
+ 44-  4:	Fcan01_22768-PA	Fcan01_24046-PA	  3e-33
+ 44-  5:	Fcan01_22772-PA	Fcan01_24060-PA	      0
+## Alignment 45: score=418.0 e_value=1.2e-22 N=10 Fcan01_Sc026&Fcan01_Sc030 minus
+ 45-  0:	Fcan01_22835-PA	Fcan01_24040-PA	  6e-61
+ 45-  1:	Fcan01_22852-PA	Fcan01_24039-PA	  5e-25
+ 45-  2:	Fcan01_22868-PA	Fcan01_24019-PA	 6e-102
+ 45-  3:	Fcan01_22869-PA	Fcan01_24018-PA	 3e-107
+ 45-  4:	Fcan01_22871-PA	Fcan01_24014-PA	      0
+ 45-  5:	Fcan01_22873-PA	Fcan01_24013-PA	 2e-179
+ 45-  6:	Fcan01_22874-PA	Fcan01_24005-PA	 2e-162
+ 45-  7:	Fcan01_22880-PA	Fcan01_24001-PA	      0
+ 45-  8:	Fcan01_22884-PA	Fcan01_23994-PA	 3e-156
+ 45-  9:	Fcan01_22906-PA	Fcan01_23968-PA	  4e-37
+## Alignment 46: score=804.0 e_value=1.1e-43 N=17 Fcan01_Sc027&Fcan01_Sc039 plus
+ 46-  0:	Fcan01_23248-PA	Fcan01_25832-PA	      0
+ 46-  1:	Fcan01_23249-PA	Fcan01_25833-PA	      0
+ 46-  2:	Fcan01_23251-PA	Fcan01_25834-PA	 1e-128
+ 46-  3:	Fcan01_23254-PA	Fcan01_25835-PA	 4e-173
+ 46-  4:	Fcan01_23255-PA	Fcan01_25836-PA	      0
+ 46-  5:	Fcan01_23262-PA	Fcan01_25841-PA	      0
+ 46-  6:	Fcan01_23267-PA	Fcan01_25842-PA	      0
+ 46-  7:	Fcan01_23286-PA	Fcan01_25849-PA	  2e-32
+ 46-  8:	Fcan01_23287-PA	Fcan01_25850-PA	 3e-149
+ 46-  9:	Fcan01_23290-PA	Fcan01_25854-PA	  5e-15
+ 46- 10:	Fcan01_23298-PA	Fcan01_25856-PA	      0
+ 46- 11:	Fcan01_23299-PA	Fcan01_25857-PA	      0
+ 46- 12:	Fcan01_23300-PA	Fcan01_25858-PA	  1e-58
+ 46- 13:	Fcan01_23301-PA	Fcan01_25862-PA	 3e-172
+ 46- 14:	Fcan01_23303-PA	Fcan01_25863-PA	 2e-126
+ 46- 15:	Fcan01_23304-PA	Fcan01_25864-PA	      0
+ 46- 16:	Fcan01_23306-PA	Fcan01_25866-PA	 2e-123
+## Alignment 47: score=846.0 e_value=4e-50 N=18 Fcan01_Sc029&Fcan01_Sc029 minus
+ 47-  0:	Fcan01_23606-PA	Fcan01_23792-PA	  1e-62
+ 47-  1:	Fcan01_23609-PA	Fcan01_23789-PA	      0
+ 47-  2:	Fcan01_23610-PA	Fcan01_23788-PA	 9e-120
+ 47-  3:	Fcan01_23611-PA	Fcan01_23786-PA	  2e-67
+ 47-  4:	Fcan01_23613-PA	Fcan01_23784-PA	 2e-141
+ 47-  5:	Fcan01_23614-PA	Fcan01_23783-PA	      0
+ 47-  6:	Fcan01_23615-PA	Fcan01_23781-PA	      0
+ 47-  7:	Fcan01_23618-PA	Fcan01_23777-PA	      0
+ 47-  8:	Fcan01_23620-PA	Fcan01_23776-PA	      0
+ 47-  9:	Fcan01_23622-PA	Fcan01_23774-PA	  8e-73
+ 47- 10:	Fcan01_23626-PA	Fcan01_23771-PA	  4e-87
+ 47- 11:	Fcan01_23630-PA	Fcan01_23770-PA	 4e-174
+ 47- 12:	Fcan01_23632-PA	Fcan01_23769-PA	  2e-25
+ 47- 13:	Fcan01_23643-PA	Fcan01_23766-PA	 4e-171
+ 47- 14:	Fcan01_23644-PA	Fcan01_23765-PA	 4e-136
+ 47- 15:	Fcan01_23648-PA	Fcan01_23764-PA	  8e-96
+ 47- 16:	Fcan01_23649-PA	Fcan01_23763-PA	  2e-67
+ 47- 17:	Fcan01_23657-PA	Fcan01_23738-PA	 7e-120
+## Alignment 48: score=270.0 e_value=2.4e-09 N=6 Fcan01_Sc029&Fcan01_Sc039 plus
+ 48-  0:	Fcan01_23592-PA	Fcan01_25876-PA	      0
+ 48-  1:	Fcan01_23596-PA	Fcan01_25878-PA	  6e-96
+ 48-  2:	Fcan01_23600-PA	Fcan01_25883-PA	  3e-78
+ 48-  3:	Fcan01_23601-PA	Fcan01_25884-PA	      0
+ 48-  4:	Fcan01_23618-PA	Fcan01_25889-PA	      0
+ 48-  5:	Fcan01_23626-PA	Fcan01_25892-PA	  1e-76
+## Alignment 49: score=298.0 e_value=3.8e-14 N=7 Fcan01_Sc030&Fcan01_Sc032 minus
+ 49-  0:	Fcan01_24062-PA	Fcan01_24500-PA	 2e-115
+ 49-  1:	Fcan01_24087-PA	Fcan01_24493-PA	 9e-100
+ 49-  2:	Fcan01_24088-PA	Fcan01_24490-PA	      0
+ 49-  3:	Fcan01_24096-PA	Fcan01_24480-PA	  2e-83
+ 49-  4:	Fcan01_24097-PA	Fcan01_24479-PA	 1e-127
+ 49-  5:	Fcan01_24098-PA	Fcan01_24462-PA	 1e-173
+ 49-  6:	Fcan01_24100-PA	Fcan01_24460-PA	  2e-96
+## Alignment 50: score=268.0 e_value=6e-10 N=6 Fcan01_Sc030&Fcan01_Sc032 minus
+ 50-  0:	Fcan01_24144-PA	Fcan01_24484-PA	  4e-93
+ 50-  1:	Fcan01_24145-PA	Fcan01_24459-PA	 4e-113
+ 50-  2:	Fcan01_24147-PA	Fcan01_24455-PA	 2e-105
+ 50-  3:	Fcan01_24150-PA	Fcan01_24453-PA	 4e-125
+ 50-  4:	Fcan01_24151-PA	Fcan01_24452-PA	 2e-106
+ 50-  5:	Fcan01_24152-PA	Fcan01_24448-PA	  8e-87
+## Alignment 51: score=350.0 e_value=2.1e-10 N=7 Fcan01_Sc031&Fcan01_Sc031 minus
+ 51-  0:	Fcan01_24390-PA	Fcan01_24407-PA	 1e-169
+ 51-  1:	Fcan01_24391-PA	Fcan01_24406-PA	      0
+ 51-  2:	Fcan01_24392-PA	Fcan01_24405-PA	      0
+ 51-  3:	Fcan01_24393-PA	Fcan01_24404-PA	      0
+ 51-  4:	Fcan01_24394-PA	Fcan01_24403-PA	      0
+ 51-  5:	Fcan01_24395-PA	Fcan01_24402-PA	  4e-81
+ 51-  6:	Fcan01_24396-PA	Fcan01_24401-PA	 1e-173
+## Alignment 52: score=290.0 e_value=3.7e-08 N=6 Fcan01_Sc052&Fcan01_Sc076 minus
+ 52-  0:	Fcan01_27461-PA	Fcan01_28513-PA	 4e-178
+ 52-  1:	Fcan01_27462-PA	Fcan01_28512-PA	 6e-121
+ 52-  2:	Fcan01_27464-PA	Fcan01_28510-PA	 2e-151
+ 52-  3:	Fcan01_27471-PA	Fcan01_28509-PA	  5e-83
+ 52-  4:	Fcan01_27473-PA	Fcan01_28508-PA	      0
+ 52-  5:	Fcan01_27476-PA	Fcan01_28507-PA	      0
+## Alignment 53: score=290.0 e_value=5e-11 N=6 Fcan01_Sc062&Fcan01_Sc062 minus
+ 53-  0:	Fcan01_28006-PA	Fcan01_28027-PA	  5e-97
+ 53-  1:	Fcan01_28007-PA	Fcan01_28017-PA	 2e-110
+ 53-  2:	Fcan01_28009-PA	Fcan01_28016-PA	 1e-105
+ 53-  3:	Fcan01_28010-PA	Fcan01_28015-PA	  3e-53
+ 53-  4:	Fcan01_28011-PA	Fcan01_28014-PA	 2e-128
+ 53-  5:	Fcan01_28012-PA	Fcan01_28013-PA	 8e-112
