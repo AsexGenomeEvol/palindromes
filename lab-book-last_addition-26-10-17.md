@@ -39,7 +39,7 @@ Running this gives that output:
 8 | Sc | gene-PA | start | end | - | g2b + swap + remove-other-cols + remove aliases | **54** | **871** | **28734** | creates a .tandem file - closest to the actual results yet
 | **reference** | Sc* | ????? | start | end | don't matter | ----------------- | **55 ?** | **883** | **27'594 ?** | -assuming that # of alignments refers to syntenic blocs -assuming the number of all genes |
 
-#### Comparison with the actual results form the paper
+#### Comparison with the actual results from the paper
 
 - number of alignments: 54/55
 - number of collinear genes: 871/883
