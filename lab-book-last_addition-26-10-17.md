@@ -1,3 +1,6 @@
+## [Link to this section in my lab-book](https://github.com/AsexGenomeEvol/palindromes/blob/master/lab-book.md#261017)
+
+
 ### 26.10.17
 
 Obviously each gene have to have one particular line of the lines that are showed below:
