@@ -1,0 +1,195 @@
+max gap(m): 0 match_size(s): 1
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+6 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [8.953 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 3 palindromes have been identified.
+
+
+max gap(m): 0 match_size(s): 2
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+6 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [6.413 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 3 palindromes have been identified.
+
+
+max gap(m): 0 match_size(s): 3
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+6 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [5.725 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 3 palindromes have been identified.
+
+
+max gap(m): 0 match_size(s): 4
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+6 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [5.149 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 3 palindromes have been identified.
+
+
+max gap(m): 0 match_size(s): 5
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+6 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [4.723 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 3 palindromes have been identified.
+
+
+max gap(m): 1 match_size(s): 1
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+23 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [8.678 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 5 palindromes have been identified.
+
+
+max gap(m): 1 match_size(s): 2
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+23 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [6.198 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 5 palindromes have been identified.
+
+
+max gap(m): 1 match_size(s): 3
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+23 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [5.269 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 5 palindromes have been identified.
+
+
+max gap(m): 1 match_size(s): 4
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+23 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [4.642 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 5 palindromes have been identified.
+
+
+max gap(m): 1 match_size(s): 5
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+9 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [4.216 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 4 palindromes have been identified.
+
+
+max gap(m): 5 match_size(s): 1
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+41 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [8.475 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 4 palindromes have been identified.
+
+
+max gap(m): 5 match_size(s): 2
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+46 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [6.016 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 7 palindromes have been identified.
+
+
+max gap(m): 5 match_size(s): 3
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+48 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [5.256 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 7 palindromes have been identified.
+
+
+max gap(m): 5 match_size(s): 4
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+47 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [4.809 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 8 palindromes have been identified.
+
+
+max gap(m): 5 match_size(s): 5
+Reading BLAST file and pre-processing
+Generating BLAST list
+54507 matches imported (38715 discarded)
+2462 pairwise comparisons
+21 alignments generated
+Pairwise collinear blocks written to ./fcand.collinearity [4.318 seconds elapsed]
+
+
+palindromes_parser output:
+The .collinearity file was correctly parsed. 6 palindromes have been identified.
+
+

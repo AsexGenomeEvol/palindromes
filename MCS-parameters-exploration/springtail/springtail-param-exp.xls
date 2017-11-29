@@ -1,0 +1,16 @@
+alignments,palindromes,max-gap-m,match-size-s,species
+6,3,0,1,springtail
+6,3,0,2,springtail
+6,3,0,3,springtail
+6,3,0,4,springtail
+6,3,0,5,springtail
+23,5,1,1,springtail
+23,5,1,2,springtail
+23,5,1,3,springtail
+23,5,1,4,springtail
+9,4,1,5,springtail
+41,4,5,1,springtail
+46,7,5,2,springtail
+48,7,5,3,springtail
+47,8,5,4,springtail
+21,6,5,5,springtail
