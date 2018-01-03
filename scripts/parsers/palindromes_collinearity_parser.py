@@ -7,6 +7,9 @@ Created on Mon Nov 13 18:17:38 2017
 """
 import sys
 
+# This script will parse the .collinearity file of MCScanX output and look for possible palindromes.
+# Palindromes are defined here by having inverted collinear blocks within the same scaffold.
+
 # Test of input file
 if ".collinearity" not in sys.argv[1]:
     print("Input file must be a MCScanX .collinearity result")
