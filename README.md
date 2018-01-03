@@ -1,3 +1,3 @@
 # palindromes
 
-a repo for Jonathan to work on hit first step project - annotation and comparison of palindrom between sexual and asexual Timema species.
+Repository for Jonathan to work on his first step project: annotation and comparison of palindromes between sexual and asexual Timema species.
